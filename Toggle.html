@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+#myBox
+  {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  transition: all 0.1s ease; /* smooth animation */
+  }
+#myBox.active {
+  width: 400px;
+  height: 500px;
+  background-color: green;
+}
+  </style>
+</head>
+<body>
+  <button id="btn1" onclick="Transition()">Click Me</button>
+  <div id="myBox"></div>
+  <script>
+function Transition()
+{
+let el=document.getElementById('myBox');
+el.classList.toggle('active');
+
+}
+</script>
+</body>
+</html>
