@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .mybox {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border: 2px solid black;
+      margin-top: 20px;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .active {
+      background-color: green;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="head1">Welcome to the Cognizant</h1>
+  <button onclick="change1(); change2()">Click Me</button>
+
+  <div class="mybox" id="box1"></div>
+
+  <script>
+    function change1(){
+      let el = document.getElementById("head1");
+      el.classList.toggle("red");
+    }
+
+    function change2(){
+      let e1 = document.getElementById("box1");
+      e1.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
+
+two object changing
