@@ -1,0 +1,25 @@
+<html>
+<head>
+<style>
+  #btn
+  {
+    border-radius:209px;
+  }
+.active
+  {
+    color:red;
+  }
+  </style>
+  </head>
+<body>
+<h1 id="head1" >Hi Ragul<h1>
+  <button id="btn"onclick="colorchange()">click</button>
+<script>
+function colorchange()
+  {
+    let el=document.getElementById("head1");
+    el.classList.toggle("active");
+  }
+  </script>
+  </body>
+</html>
